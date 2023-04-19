@@ -1,3 +1,4 @@
+---
 # Manifest file downloaded from fusion
 externalId: tr-create_asset_hierarchy
 name: create_asset_hierarchy
@@ -5,7 +6,7 @@ query:
     file: transformation.sql
 
 destination:
-  type: asset_hierarchy
+    type: asset_hierarchy
 ignoreNullFields: true
 shared: true
 action: upsert
