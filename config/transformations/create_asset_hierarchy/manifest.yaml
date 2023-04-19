@@ -5,7 +5,7 @@ query:
     file: transformation.sql
 
 destination:
-  type: asset_hierarchy
+    type: asset_hierarchy
 ignoreNullFields: true
 shared: true
 action: upsert
@@ -52,4 +52,4 @@ authentication:
 #   scopes:
 #    - ${SCOPES}
 #   # Optional: If idP requires providing the audience
-#   audience: ${AUDIENCE}
+

@@ -3,7 +3,12 @@ externalId: tr-ts_assets_mapping
 name: ts_assets_mapping
 query:
     file: transformation.sql
-
+destination:
+  type: timeseries
+ignoreNullFields: true
+shared: true
+action: update
+dataSetExternalId: uc:001:oee:ds
 authentication:
     clientId: ${COGNITE_CLIENT_ID}
     clientSecret: ${COGNITE_CLIENT_SECRET}
@@ -45,4 +50,4 @@ authentication:
 #   scopes:
 #    - ${SCOPES}
 #   # Optional: If idP requires providing the audience
-#   audience: ${AUDIENCE}
+
